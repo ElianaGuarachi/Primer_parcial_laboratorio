@@ -1,0 +1,25 @@
+
+#ifndef INFORMES_H_
+#define INFORMES_H_
+#include "Clientes.h"
+#include "Pedidos.h"
+
+typedef struct
+{
+	int id;
+	int contador;
+
+}eAuxiliarContador;
+
+int ListadoClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos);
+
+int ContadorDePedidosPendientePorCliente(ePedidos pedidos[], int tam_pedidos, eAuxiliarContador pedidosPendientes[], int tam_pendientes);
+
+int InicializarAuxiliarContadorDePedidosPorCliente(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendientes[]);
+
+int ListaDeClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendiente[]);
+
+void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[]);
+
+
+#endif /* INFORMES_H_ */

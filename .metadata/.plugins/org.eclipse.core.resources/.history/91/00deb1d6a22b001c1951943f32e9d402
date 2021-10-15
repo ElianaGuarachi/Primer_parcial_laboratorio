@@ -1,0 +1,25 @@
+
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
+
+#include "Clientes.h"
+#define PENDIENTE 1
+#define COMPLETADO 2
+
+typedef struct{
+	int pAltaDensidad;
+	int pBajaDensidad;
+	int polipropileno;
+}eTipoPlastico;
+
+typedef struct
+{
+	int idPedido;
+	int cantidadKilos;
+	int estado;
+	int idCliente;
+	int isEmpty;
+	eTipoPlastico tiposPlastico;
+}ePedidos;
+
+#endif /* PEDIDOS_H_ */

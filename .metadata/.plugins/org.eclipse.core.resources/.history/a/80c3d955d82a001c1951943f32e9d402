@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "utn.h"
+
+#ifndef CLIENTES_H_
+#define CLIENTES_H_
+
+typedef struct
+{
+	int idCliente;
+	char nombreEmpresa[51];
+	char cuit[51];
+	char direccion[51];
+	char localidad[51];
+	int isEmpty;
+}eClientes;
+
+#endif /* CLIENTES_H_ */

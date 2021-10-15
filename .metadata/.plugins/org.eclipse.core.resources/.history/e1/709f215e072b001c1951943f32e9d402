@@ -1,0 +1,21 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
+
+
+typedef struct
+{
+	int idPedido;
+	int cantidadKilos;
+	int estado;
+	int pAltaDensidad;
+	int pBajaDensidad;
+	int polipropileno;
+	int idCliente;
+	int isEmpty;
+}ePedidos;
+
+#endif /* PEDIDOS_H_ */

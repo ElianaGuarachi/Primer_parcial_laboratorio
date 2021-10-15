@@ -1,0 +1,16 @@
+
+
+#ifndef ESTADOPEDIDOS_H_
+#define ESTADOPEDIDOS_H_
+
+#include "Pedidos.h"
+
+typedef struct
+{
+	int idEstado;
+	char descripcionEstado[12];
+	int isEmpty;
+}eEstado;
+
+
+#endif /* ESTADOPEDIDOS_H_ */

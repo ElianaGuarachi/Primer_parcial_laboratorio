@@ -1,0 +1,14 @@
+/*
+ * Informes.h
+ *
+ *  Created on: 11 oct. 2021
+ *      Author: Eliana
+ */
+
+#ifndef INFORMES_H_
+#define INFORMES_H_
+#include "Clientes.h"
+#include "Pedidos.h"
+
+
+#endif /* INFORMES_H_ */

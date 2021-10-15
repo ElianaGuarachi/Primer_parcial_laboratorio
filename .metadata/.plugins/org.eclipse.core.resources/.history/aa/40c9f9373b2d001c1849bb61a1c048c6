@@ -1,0 +1,34 @@
+
+#ifndef INFORMES_H_
+#define INFORMES_H_
+#include "Clientes.h"
+#include "Pedidos.h"
+
+typedef struct
+{
+	int id;
+	int contador;
+
+}eAuxiliarContador;
+
+int ListadoDeClientesContandoSusPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos);
+
+int ContadorDePedidosPendientePorCliente(ePedidos pedidos[], int tam_pedidos, eAuxiliarContador pedidosPendientes[], int tam_pendientes);
+
+int InicializarAuxiliarContadorDePedidosPorCliente(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendientes[]);
+
+int MostrarListaDeClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendiente[]);
+
+void MostrarClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[]);
+
+void PedidoEnEstadoPerdienteConSuCliente(ePedidos pedidos, int tam_clientes, eClientes clientes[]);
+
+int MostrarListaDePedidosEnEstadoPendiente(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
+
+int ImprimirPedidosProcesadosEnEstadoCompletado(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
+
+void PedidoEnEstadoCompletadoConInfoDeSuCliente(ePedidos pedidos, int tam_clientes, eClientes clientes[]);
+
+
+
+#endif /* INFORMES_H_ */

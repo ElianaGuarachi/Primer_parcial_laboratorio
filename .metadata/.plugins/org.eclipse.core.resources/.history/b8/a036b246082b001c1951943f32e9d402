@@ -1,0 +1,19 @@
+
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
+
+#include "Clientes.h"
+
+typedef struct
+{
+	int idPedido;
+	int cantidadKilos;
+	int estado;
+	int pAltaDensidad;
+	int pBajaDensidad;
+	int polipropileno;
+	int idCliente;
+	int isEmpty;
+}ePedidos;
+
+#endif /* PEDIDOS_H_ */

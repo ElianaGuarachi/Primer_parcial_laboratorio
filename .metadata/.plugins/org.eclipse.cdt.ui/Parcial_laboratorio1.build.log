@@ -1,0 +1,12 @@
+10:56:37 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+..\src\localidad.c: In function 'MostrarListaDeLocalidades':
+..\src\localidad.c:34:5: warning: implicit declaration of function 'MostrarInfoUnCliente' [-Wimplicit-function-declaration]
+   34 |     MostrarInfoUnCliente(localidades[i]);
+      |     ^~~~~~~~~~~~~~~~~~~~
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+
+10:56:41 Build Finished. 0 errors, 1 warnings. (took 4s.277ms)
+

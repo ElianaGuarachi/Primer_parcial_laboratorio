@@ -1,0 +1,38 @@
+
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
+
+#include "Clientes.h"
+#define PENDIENTE 1
+#define COMPLETADO 2
+
+typedef struct
+{
+	float pAltaDensidad;
+	float pBajaDensidad;
+	float polipropileno;
+
+}eTiposResiduos;
+
+typedef struct
+{
+	int idPedido;
+	float cantidadKilos;
+	eTiposResiduos tiposResiduos;
+	int idCliente;
+	int idestado;
+	int isEmpty;
+}ePedidos;
+
+int InicializarListaDePedidos(ePedidos pedidos[], int cantidad);
+int BuscarLugarLibrePedidos(ePedidos pedidos[], int cantidad);
+int BuscarPedidosPorId(ePedidos pedidos[], int cantidad, int id);
+int AltaPedidoDeRecoleccion(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, int* idPedidos);
+int MostrarInfoUnPedido(ePedidos pedidos, eClientes clientes[], int tam_clientes, eEstado estadoPedidos[], int tam_estados);
+int MostrarListaDePedidos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
+int ProcesarResiduos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
+int VerificarIngresoDeTiposDeResiduos(ePedidos pedidos[], int index);
+
+
+
+#endif /* PEDIDOS_H_ */

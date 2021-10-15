@@ -1,0 +1,75 @@
+
+#include "Informes.h"
+
+/*
+ * 6) Imprimir Clientes: Se imprimirá una lista de clientes con todos sus datos junto con la cantidad de
+ *  “pedidos de recolección” que posee en estado “Pendiente”.
+ *
+ */
+
+int ContadorDePedidosPendientesPorCliente(eClientes cliente, ePedidos pedidos[], int tam_pedidos)
+{
+	int retorno = -1;
+	int i;
+	int contadorDePedidosPorCliente;
+	contadorDePedidosPorCliente=0;
+	if(pedidos != NULL && tam_pedidos > 0)
+	{
+		for(i=0; i<tam_pedidos; i++)
+		{
+			if(pedidos[i].idCliente == cliente.idCliente && pedidos[i].estado == PENDIENTE)
+			{
+				contadorDePedidosPorCliente++;
+			}
+		}
+	}
+	return retorno;
+}
+
+int MostrarClienteConSusPedidosPendientes(eClientes cliente, ePedidos pedidos[], int tam_pedidos)
+{
+	int retorno = -1;
+	int i;
+	if(pedidos != NULL && tam_pedidos > 0)
+	{
+		for(i=0; i<tam_pedidos; i++)
+		{
+			if(pedidos[i].idCliente == cliente.idCliente)
+			{
+				printf("\n%5d %20s %20s %20s %5d %20s Pedido numero: %10d", cliente.idCliente, cliente.nombreEmpresa, cliente.cuit,
+						cliente.direccion.calle, cliente.direccion.numero, cliente.localidad, pedidos[i].idPedido);
+			}
+		}
+	}
+	return retorno;
+}
+
+int MostrarListaDeClientesConSusPedidos(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos)
+{
+	int retorno=-1;
+	int i;
+	int j;
+	if(clientes != NULL && tam_clientes > 0 && pedidos != NULL && tam_pedidos > 0)
+	{
+		for(i=0; i<tam_clientes; i++)
+		{
+			MostrarClienteConSuPedido(clientes[i], pedidos, tam_pedidos);
+		}
+	}
+
+	return retorno;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

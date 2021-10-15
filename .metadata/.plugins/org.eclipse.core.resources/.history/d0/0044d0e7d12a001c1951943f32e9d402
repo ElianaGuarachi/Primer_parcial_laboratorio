@@ -1,0 +1,18 @@
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifndef PEDIDOS_H_
+#define PEDIDOS_H_
+
+
+typedef struct
+{
+	int idPedido;
+	int cantidadKilos;
+	int estado;
+	int isEmpty;
+	int idCliente;
+}ePedidos;
+
+#endif /* PEDIDOS_H_ */

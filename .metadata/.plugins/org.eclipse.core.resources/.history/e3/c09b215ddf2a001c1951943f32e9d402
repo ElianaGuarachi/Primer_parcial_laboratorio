@@ -1,0 +1,68 @@
+
+#include "Clientes.h"
+
+int InicilizarClientes(eClientes clientes[], int cantidad)
+{
+	int retorno=-1;
+	if(clientes != NULL && cantidad > 0)
+	{
+		for(int i=0; i<cantidad; i++)
+		{
+			clientes[i].isEmpty = LIBRE;
+			retorno=1;
+		}
+	}
+	return retorno;
+}
+
+int BuscarLibre(eClientes clientes[], int cantidad)
+{
+	int index;
+	int i;
+	index = -1;
+	if(clientes != NULL && cantidad > 0)
+	{
+		for(i=0; i< cantidad; i++)
+		{
+			if(clientes[i].isEmpty == LIBRE)
+			{
+				index=i;
+				break;
+			}
+		}
+	}
+	return index;
+}
+
+eClientes InformacionDeUnCliente()
+{
+	eClientes unCliente;
+	ObtenerNumerosLetras(unCliente.nombreEmpresa, "\nIngre el nombre de la empresa: ",
+			"Error. Ingrese nuevamente (letras y numeros): ",1);
+	ObtenerCuitCuil(unCliente.cuit, "\nIngrese el CUIT de la empresa (xx-xxxxxxxx-x)",
+			"\nError. Ingrese el cuit nuevamente: ", 1);
+	ObtenerNumerosLetras(unCliente.direccion, "\nIngrese la direccion de la empresa: ",
+			"\nError. Ingrese la direccion nuevamente: ", 1);
+	ObtenerNumerosLetras(unCliente.localidad, "\nIngrese la localidad: ",
+			"\nError. Ingrese la localidad nuevamente: ", 1);
+	unCliente.isEmpty = OCUPADO;
+	unCliente.idCliente = 1;
+
+	return unCliente;
+}
+
+int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes)
+{
+	int retorno=-1;
+	int index;
+	if(clientes != NULL && cantidad > 0)
+	{
+		index=BuscarLibre(clientes, cantidad);
+		if(index != -1)
+		{
+			clientes[index]=InformacionDeUnCliente();
+			retorno=0;
+		}
+	}
+	return retorno;
+}

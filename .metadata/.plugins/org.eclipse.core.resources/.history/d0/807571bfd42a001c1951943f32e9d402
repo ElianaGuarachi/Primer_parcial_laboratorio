@@ -1,0 +1,24 @@
+/*
+ ============================================================================
+ Name        : Parcial_laboratorio1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include "Clientes.h"
+#include "Pedidos.h"
+#define CANT_CLIENTES 10
+#define CANT_PEDIDOS 100
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+	eClientes clientes[CANT_CLIENTES];
+	ePedidos pedidos[CANT_PEDIDOS];
+
+
+	return EXIT_SUCCESS;
+}
