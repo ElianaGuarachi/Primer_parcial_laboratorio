@@ -1,1319 +1,601 @@
-22:48:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+11:39:44 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListaDeClientesConSusPedidosPendientes':
-..\src\Informes.c:80:82: error: incompatible type for argument 3 of 'ClienteConSusPedidosPendientes'
-   80 |     ClienteConSusPedidosPendientes(clientes[i], tam_clientes, pedidosPendiente[i].contador);
-      |                                                               ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-      |                                                                                  |
-      |                                                                                  int
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:22:92: note: expected 'eAuxiliarContador' {aka 'struct <anonymous>'} but argument is of type 'int'
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes);
-      |                                                                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-22:53:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+11:46:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListaDeClientesConSusPedidosPendientes':
-..\src\Informes.c:80:63: error: incompatible type for argument 3 of 'ClienteConSusPedidosPendientes'
-   80 |     ClienteConSusPedidosPendientes(clientes[i], tam_clientes, pedidosPendiente);
-      |                                                               ^~~~~~~~~~~~~~~~
-      |                                                               |
-      |                                                               eAuxiliarContador * {aka struct <anonymous> *}
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:22:92: note: expected 'eAuxiliarContador' {aka 'struct <anonymous>'} but argument is of type 'eAuxiliarContador *' {aka 'struct <anonymous> *'}
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes);
-      |                                                                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-..\src\Informes.c: At top level:
-..\src\Informes.c:90:6: error: conflicting types for 'ClienteConSusPedidosPendientes'
-   90 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[])
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:22:6: note: previous declaration of 'ClienteConSusPedidosPendientes' was here
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes);
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-22:55:42 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+11:48:14 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListaDeClientesConSusPedidosPendientes':
-..\src\Informes.c:80:63: error: incompatible type for argument 3 of 'ClienteConSusPedidosPendientes'
-   80 |     ClienteConSusPedidosPendientes(clientes[i], tam_clientes, pedidosPendiente);
-      |                                                               ^~~~~~~~~~~~~~~~
-      |                                                               |
-      |                                                               eAuxiliarContador * {aka struct <anonymous> *}
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:22:92: note: expected 'eAuxiliarContador' {aka 'struct <anonymous>'} but argument is of type 'eAuxiliarContador *' {aka 'struct <anonymous> *'}
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes);
-      |                                                                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-..\src\Informes.c: At top level:
-..\src\Informes.c:90:6: error: conflicting types for 'ClienteConSusPedidosPendientes'
-   90 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[])
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:22:6: note: previous declaration of 'ClienteConSusPedidosPendientes' was here
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes);
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-22:57:35 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
 Info: Nothing to build for Parcial_laboratorio1
-23:10:18 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+12:01:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+14:19:25 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+14:23:22 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+14:27:44 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
+..\src\Parcial_laboratorio1.c: In function 'main':
+..\src\Parcial_laboratorio1.c:20:93: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   20 |  eClientes clientes[CANT_CLIENTES] = {{1, "Zara", "26-12458796-4", {"Mariano Acosta", 236}, "Parque Chacabuco", OCUPADO},
+      |                                                                                             ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_laboratorio1.c:20:93: note: (near initialization for 'clientes[0].idLocalidad')
+..\src\Parcial_laboratorio1.c:21:72: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   21 |            {2, "Forever 21", "27-31546987-8", {"Av Avellaneda" , 123}, "Villa Soldati", OCUPADO},
+      |                                                                        ^~~~~~~~~~~~~~~
+..\src\Parcial_laboratorio1.c:21:72: note: (near initialization for 'clientes[1].idLocalidad')
+..\src\Parcial_laboratorio1.c:22:67: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   22 |            {3, "Pepsi", "30-45987621-3", {"Emilio Mitre"  , 654}, "Floresta", OCUPADO},
+      |                                                                   ^~~~~~~~~~
+..\src\Parcial_laboratorio1.c:22:67: note: (near initialization for 'clientes[2].idLocalidad')
+..\src\Parcial_laboratorio1.c:23:72: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   23 |            {4, "Mala mia", "31-36926395-5", {"Agustin de Vedia", 789}, "Boedo", OCUPADO},
+      |                                                                        ^~~~~~~
+..\src\Parcial_laboratorio1.c:23:72: note: (near initialization for 'clientes[3].idLocalidad')
+..\src\Parcial_laboratorio1.c:24:65: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   24 |            {5, "Jumbo" , "32-12457214-4", {"Av Cordoba" ,1234}, "Flores", OCUPADO}};
+      |                                                                 ^~~~~~~~
+..\src\Parcial_laboratorio1.c:24:65: note: (near initialization for 'clientes[4].idLocalidad')
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
-23:26:04 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+14:28:25 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+..\src\Parcial_laboratorio1.c: In function 'main':
+..\src\Parcial_laboratorio1.c:20:93: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   20 |  eClientes clientes[CANT_CLIENTES] = {{1, "Zara", "26-12458796-4", {"Mariano Acosta", 236}, "Parque Chacabuco", OCUPADO},
+      |                                                                                             ^~~~~~~~~~~~~~~~~~
+..\src\Parcial_laboratorio1.c:20:93: note: (near initialization for 'clientes[0].idLocalidad')
+..\src\Parcial_laboratorio1.c:21:72: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   21 |            {2, "Forever 21", "27-31546987-8", {"Av Avellaneda" , 123}, "Villa Soldati", OCUPADO},
+      |                                                                        ^~~~~~~~~~~~~~~
+..\src\Parcial_laboratorio1.c:21:72: note: (near initialization for 'clientes[1].idLocalidad')
+..\src\Parcial_laboratorio1.c:22:67: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   22 |            {3, "Pepsi", "30-45987621-3", {"Emilio Mitre"  , 654}, "Floresta", OCUPADO},
+      |                                                                   ^~~~~~~~~~
+..\src\Parcial_laboratorio1.c:22:67: note: (near initialization for 'clientes[2].idLocalidad')
+..\src\Parcial_laboratorio1.c:23:72: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   23 |            {4, "Mala mia", "31-36926395-5", {"Agustin de Vedia", 789}, "Boedo", OCUPADO},
+      |                                                                        ^~~~~~~
+..\src\Parcial_laboratorio1.c:23:72: note: (near initialization for 'clientes[3].idLocalidad')
+..\src\Parcial_laboratorio1.c:24:65: warning: initialization of 'int' from 'char *' makes integer from pointer without a cast [-Wint-conversion]
+   24 |            {5, "Jumbo" , "32-12457214-4", {"Av Cordoba" ,1234}, "Flores", OCUPADO}};
+      |                                                                 ^~~~~~~~
+..\src\Parcial_laboratorio1.c:24:65: note: (near initialization for 'clientes[4].idLocalidad')
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+14:29:01 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+Info: Nothing to build for Parcial_laboratorio1
+14:44:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-23:50:04 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+14:52:10 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:57:46 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+15:36:32 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:00:43 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+15:39:36 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:03:03 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+15:40:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:04:15 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+15:41:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:07:56 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:42:37 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+15:42:55 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-In file included from ..\src\Parcial_laboratorio1.c:11:
-..\src\Informes.h:24:6: error: conflicting types for 'ClienteConSusPedidosPendientes'
-   24 | void ClienteConSusPedidosPendientes(eClientes pedidos, int tam_clientes, eClientes clientes[]);
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.h:22:6: note: previous declaration of 'ClienteConSusPedidosPendientes' was here
-   22 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[]);
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.h:26:57: error: unknown type name 'tam_pedidos'
-   26 | int ListaDePedidosEnEstadoPendiente(ePedidos pedidos[], tam_pedidos, eClientes clientes[], tam_clientes)
-      |                                                         ^~~~~~~~~~~
-..\src\Informes.h:26:92: error: unknown type name 'tam_clientes'
-   26 | int ListaDePedidosEnEstadoPendiente(ePedidos pedidos[], tam_pedidos, eClientes clientes[], tam_clientes)
-      |                                                                                            ^~~~~~~~~~~~
-00:44:56 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+16:48:14 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c:199:147: error: unknown type name 'tam_localidades'
+  199 | int CantidadPedidosPendientesPorLocalidad (ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes, eLocalidad localidades[], tam_localidades)
+      |                                                                                                                                                   ^~~~~~~~~~~~~~~
+16:48:54 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
+..\src\Informes.c:229:36: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  229 |           printf("\nLa Localidad: %s tiene %d pedidos pendientes\n", auxLocalidad, contador);
+      |                                   ~^                                 ~~~~~~~~~~~~
+      |                                    |                                 |
+      |                                    char *                            int
+      |                                   %d
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-In file included from ..\src\Parcial_laboratorio1.c:11:
-..\src\Informes.h:26:57: error: unknown type name 'tam_pedidos'
-   26 | int ListaDePedidosEnEstadoPendiente(ePedidos pedidos[], tam_pedidos, eClientes clientes[], tam_clientes)
-      |                                                         ^~~~~~~~~~~
-..\src\Informes.h:26:92: error: unknown type name 'tam_clientes'
-   26 | int ListaDePedidosEnEstadoPendiente(ePedidos pedidos[], tam_pedidos, eClientes clientes[], tam_clientes)
-      |                                                                                            ^~~~~~~~~~~~
-00:45:52 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+16:50:16 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'ListaDePedidosEnEstadoPendiente':
-..\src\Parcial_laboratorio1.c:16:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   16 | int main(void) {
-      |                ^
-..\src\Parcial_laboratorio1.c:141: error: expected '{' at end of input
-  141 | }
-      | 
-..\src\Parcial_laboratorio1.c:141:1: warning: control reaches end of non-void function [-Wreturn-type]
-  141 | }
-      | ^
-00:49:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+16:52:22 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'ListaDePedidosEnEstadoPendiente':
-..\src\Parcial_laboratorio1.c:16:16: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   16 | int main(void) {
-      |                ^
-..\src\Parcial_laboratorio1.c:141: error: expected '{' at end of input
-  141 | }
-      | 
-..\src\Parcial_laboratorio1.c:141:1: warning: control reaches end of non-void function [-Wreturn-type]
-  141 | }
-      | ^
-00:50:45 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+17:23:30 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+18:51:36 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListaDePedidosEnEstadoPendiente':
-..\src\Informes.c:119:43: error: incompatible type for argument 1 of 'ClienteConSusPedidosPendientes'
-  119 |     ClienteConSusPedidosPendientes(pedidos[i], tam_clientes, clientes);
-      |                                    ~~~~~~~^~~
-      |                                           |
-      |                                           ePedidos {aka struct <anonymous>}
-..\src\Informes.c:86:47: note: expected 'eClientes' {aka 'struct <anonymous>'} but argument is of type 'ePedidos' {aka 'struct <anonymous>'}
-   86 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[])
-      |                                     ~~~~~~~~~~^~~~~~~
-..\src\Informes.c:119:62: warning: passing argument 3 of 'ClienteConSusPedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
-  119 |     ClienteConSusPedidosPendientes(pedidos[i], tam_clientes, clientes);
-      |                                                              ^~~~~~~~
-      |                                                              |
-      |                                                              eClientes * {aka struct <anonymous> *}
-..\src\Informes.c:86:92: note: expected 'eAuxiliarContador *' {aka 'struct <anonymous> *'} but argument is of type 'eClientes *' {aka 'struct <anonymous> *'}
-   86 | void ClienteConSusPedidosPendientes(eClientes cliente, int tam_clientes, eAuxiliarContador pedidosPendientes[])
-      |                                                                          ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-..\src\Informes.c:112:6: warning: unused variable 'j' [-Wunused-variable]
-  112 |  int j;
+..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
+..\src\Informes.c:205:6: warning: unused variable 'k' [-Wunused-variable]
+  205 |  int k;
       |      ^
-..\src\Informes.c: In function 'PedidoEnEstadoPerdienteConSuCliente':
-..\src\Informes.c:130:13: error: invalid operands to binary != (have 'eClientes' {aka 'struct <anonymous>'} and 'void *')
-  130 |  if(pedidos != NULL && tam_clientes > 0)
-      |             ^~
-..\src\Informes.c:136:59: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'estado'
-  136 |     printf("\nPedido Pendiente: %d %s %s %d %.2f", pedidos.estado, clientes[j].cuit,
-      |                                                           ^
-..\src\Informes.c:137:73: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'cantidadKilos'
-  137 |       clientes[j].direccion.calle, clientes[j].direccion.numero, pedidos.cantidadKilos);
-      |                                                                         ^
-00:51:41 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+..\src\Informes.c:204:6: warning: unused variable 'j' [-Wunused-variable]
+  204 |  int j;
+      |      ^
+..\src\Informes.c:203:6: warning: unused variable 'i' [-Wunused-variable]
+  203 |  int i;
+      |      ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+18:54:14 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListaDePedidosEnEstadoPendiente':
-..\src\Informes.c:118:48: error: incompatible type for argument 1 of 'PedidoEnEstadoPerdienteConSuCliente'
-  118 |     PedidoEnEstadoPerdienteConSuCliente(pedidos[i], tam_clientes, clientes);
-      |                                         ~~~~~~~^~~
-      |                                                |
-      |                                                ePedidos {aka struct <anonymous>}
+..\src\Informes.c:308:5: error: conflicting types for 'ObtenerClienteConMasPedidosPendientes'
+  308 | int ObtenerClienteConMasPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from ..\src\Informes.c:2:
-..\src\Informes.h:24:52: note: expected 'eClientes' {aka 'struct <anonymous>'} but argument is of type 'ePedidos' {aka 'struct <anonymous>'}
-   24 | void PedidoEnEstadoPerdienteConSuCliente(eClientes pedidos, int tam_clientes, eClientes clientes[]);
-      |                                          ~~~~~~~~~~^~~~~~~
-..\src\Informes.c: In function 'PedidoEnEstadoPerdienteConSuCliente':
-..\src\Informes.c:129:13: error: invalid operands to binary != (have 'eClientes' {aka 'struct <anonymous>'} and 'void *')
-  129 |  if(pedidos != NULL && tam_clientes > 0)
-      |             ^~
-..\src\Informes.c:135:59: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'estado'
-  135 |     printf("\nPedido Pendiente: %d %s %s %d %.2f", pedidos.estado, clientes[j].cuit,
-      |                                                           ^
-..\src\Informes.c:136:73: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'cantidadKilos'
-  136 |       clientes[j].direccion.calle, clientes[j].direccion.numero, pedidos.cantidadKilos);
-      |                                                                         ^
-00:52:18 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+..\src\Informes.h:134:5: note: previous declaration of 'ObtenerClienteConMasPedidosPendientes' was here
+  134 | int ObtenerClienteConMasPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, eLocalidad localidades[], int tam_localidades);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+18:54:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'PedidoEnEstadoPerdienteConSuCliente':
-..\src\Informes.c:129:13: error: invalid operands to binary != (have 'ePedidos' {aka 'struct <anonymous>'} and 'void *')
-  129 |  if(pedidos != NULL && tam_clientes > 0)
-      |             ^~
-00:52:39 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+..\src\Parcial_laboratorio1.c: In function 'main':
+..\src\Parcial_laboratorio1.c:156:43: warning: passing argument 1 of 'ObtenerClienteConMasPedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
+  156 |     ObtenerClienteConMasPedidosPendientes(pedidos, CANT_PEDIDOS,clientes, CANT_CLIENTES);
+      |                                           ^~~~~~~
+      |                                           |
+      |                                           ePedidos * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_laboratorio1.c:11:
+..\src\Informes.h:134:53: note: expected 'eClientes *' {aka 'struct <anonymous> *'} but argument is of type 'ePedidos *' {aka 'struct <anonymous> *'}
+  134 | int ObtenerClienteConMasPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos);
+      |                                           ~~~~~~~~~~^~~~~~~~~~
+..\src\Parcial_laboratorio1.c:156:65: warning: passing argument 3 of 'ObtenerClienteConMasPedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
+  156 |     ObtenerClienteConMasPedidosPendientes(pedidos, CANT_PEDIDOS,clientes, CANT_CLIENTES);
+      |                                                                 ^~~~~~~~
+      |                                                                 |
+      |                                                                 eClientes * {aka struct <anonymous> *}
+In file included from ..\src\Parcial_laboratorio1.c:11:
+..\src\Informes.h:134:92: note: expected 'ePedidos *' {aka 'struct <anonymous> *'} but argument is of type 'eClientes *' {aka 'struct <anonymous> *'}
+  134 | int ObtenerClienteConMasPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos);
+      |                                                                                   ~~~~~~~~~^~~~~~~~~
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+18:55:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
-00:54:38 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+18:56:42 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+19:00:20 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+21:43:52 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
-00:56:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+21:44:56 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:59:51 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+21:48:00 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:01:06 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-10:42:59 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-12:18:09 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+21:53:55 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-16:59:38 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+21:56:10 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+21:58:53 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 ..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
-..\src\Informes.c:14:5: warning: implicit declaration of function 'ListaDeClientesConSusPedidosPendientes'; did you mean 'MostrarClienteConSusPedidosPendientes'? [-Wimplicit-function-declaration]
-   14 |     ListaDeClientesConSusPedidosPendientes(clientes, tam_clientes, pedidosPendientes);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |     MostrarClienteConSusPedidosPendientes
+..\src\Informes.c:12:4: warning: implicit declaration of function 'ContadorDePedidosPendientePorCliente'; did you mean 'ContarPedidosPendientesPorCliente'? [-Wimplicit-function-declaration]
+   12 |    ContadorDePedidosPendientePorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    ContarPedidosPendientesPorCliente
+..\src\Informes.c: In function 'BuscarPedidosPendientesPorCliente':
+..\src\Informes.c:32:8: warning: implicit declaration of function 'BuscarClientesConPedidosPendientes'; did you mean 'BuscarClienteConMasPedidosPendientes'? [-Wimplicit-function-declaration]
+   32 |     if(BuscarClientesConPedidosPendientes(pedidos[j], pedidosPendientes, tam_pendientes)==0)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        BuscarClienteConMasPedidosPendientes
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ListadoDeClientesContandoSusPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:12: undefined reference to `ContadorDePedidosPendientePorCliente'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `BuscarPedidosPendientesPorCliente':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:32: undefined reference to `BuscarClientesConPedidosPendientes'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ObtenerClienteConMasPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:328: undefined reference to `ContadorDePedidosPendientePorCliente'
+collect2.exe: error: ld returned 1 exit status
+21:59:31 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
+..\src\Informes.c:12:4: warning: implicit declaration of function 'ContadorDePedidosPendientePorCliente'; did you mean 'ContarPedidosPendientesPorCliente'? [-Wimplicit-function-declaration]
+   12 |    ContadorDePedidosPendientePorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    ContarPedidosPendientesPorCliente
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ListadoDeClientesContandoSusPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:12: undefined reference to `ContadorDePedidosPendientePorCliente'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ObtenerClienteConMasPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:328: undefined reference to `ContadorDePedidosPendientePorCliente'
+collect2.exe: error: ld returned 1 exit status
+21:59:59 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'ObtenerClienteConMasPedidosPendientes':
+..\src\Informes.c:328:7: warning: implicit declaration of function 'ContadorDePedidosPendientePorCliente'; did you mean 'ContarPedidosPendientesPorCliente'? [-Wimplicit-function-declaration]
+  328 |       ContadorDePedidosPendientePorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |       ContarPedidosPendientesPorCliente
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ObtenerClienteConMasPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:328: undefined reference to `ContadorDePedidosPendientePorCliente'
+collect2.exe: error: ld returned 1 exit status
+22:00:40 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ObtenerClienteConMasPedidosPendientes':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:328: undefined reference to `ContadorDePedidosPendientePorCliente'
+collect2.exe: error: ld returned 1 exit status
+22:01:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'ObtenerClienteConMasPedidosPendientes':
+..\src\Informes.c:328:41: error: incompatible type for argument 1 of 'ContarPedidosPendientesPorCliente'
+  328 |       ContarPedidosPendientesPorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         ePedidos * {aka struct <anonymous> *}
+..\src\Informes.c:42:48: note: expected 'ePedidos' {aka 'struct <anonymous>'} but argument is of type 'ePedidos *' {aka 'struct <anonymous> *'}
+   42 | int ContarPedidosPendientesPorCliente(ePedidos pedidos, eAuxiliarContador pedidosPendientes[],  int tam_pendientes)
+      |                                       ~~~~~~~~~^~~~~~~
+..\src\Informes.c:328:50: warning: passing argument 2 of 'ContarPedidosPendientesPorCliente' makes pointer from integer without a cast [-Wint-conversion]
+  328 |       ContarPedidosPendientesPorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |                                                  ^~~~~~~~~~~
+      |                                                  |
+      |                                                  int
+..\src\Informes.c:42:75: note: expected 'eAuxiliarContador *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+   42 | int ContarPedidosPendientesPorCliente(ePedidos pedidos, eAuxiliarContador pedidosPendientes[],  int tam_pendientes)
+      |                                                         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+..\src\Informes.c:328:63: warning: passing argument 3 of 'ContarPedidosPendientesPorCliente' makes integer from pointer without a cast [-Wint-conversion]
+  328 |       ContarPedidosPendientesPorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |                                                               ^~~~~~~~~~~~~~~~~
+      |                                                               |
+      |                                                               eAuxiliarContador * {aka struct <anonymous> *}
+..\src\Informes.c:42:101: note: expected 'int' but argument is of type 'eAuxiliarContador *' {aka 'struct <anonymous> *'}
+   42 | int ContarPedidosPendientesPorCliente(ePedidos pedidos, eAuxiliarContador pedidosPendientes[],  int tam_pendientes)
+      |                                                                                                 ~~~~^~~~~~~~~~~~~~
+..\src\Informes.c:328:7: error: too many arguments to function 'ContarPedidosPendientesPorCliente'
+  328 |       ContarPedidosPendientesPorCliente(pedidos, tam_pedidos, pedidosPendientes, tam_clientes) == 0)
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Informes.c:42:5: note: declared here
+   42 | int ContarPedidosPendientesPorCliente(ePedidos pedidos, eAuxiliarContador pedidosPendientes[],  int tam_pendientes)
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22:02:49 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+22:12:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 ..\src\Informes.c: In function 'MostrarListaDeClientesConSusPedidosPendientes':
-..\src\Informes.c:76:5: warning: implicit declaration of function 'ClienteConSusPedidosPendientes'; did you mean 'MostrarClienteConSusPedidosPendientes'? [-Wimplicit-function-declaration]
-   76 |     ClienteConSusPedidosPendientes(clientes[i], tam_clientes, pedidosPendiente);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |     MostrarClienteConSusPedidosPendientes
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:106:8: warning: implicit declaration of function 'ListadoClientesConSusPedidosPendientes'; did you mean 'MostrarClienteConSusPedidosPendientes'? [-Wimplicit-function-declaration]
-  106 |     if(ListadoClientesConSusPedidosPendientes(clientes, CANT_CLIENTES, pedidos, CANT_PEDIDOS)==-1)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |        MostrarClienteConSusPedidosPendientes
-..\src\Parcial_laboratorio1.c:113:8: warning: implicit declaration of function 'ListaDePedidosEnEstadoPendiente'; did you mean 'MostrarListaDePedidosEnEstadoPendiente'? [-Wimplicit-function-declaration]
-  113 |     if(ListaDePedidosEnEstadoPendiente(pedidos, CANT_PEDIDOS,clientes, CANT_CLIENTES)==-1)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |        MostrarListaDePedidosEnEstadoPendiente
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ListadoDeClientesContandoSusPedidosPendientes':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:14: undefined reference to `ListaDeClientesConSusPedidosPendientes'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `MostrarListaDeClientesConSusPedidosPendientes':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:76: undefined reference to `ClienteConSusPedidosPendientes'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_laboratorio1.o: in function `main':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Parcial_laboratorio1.c:106: undefined reference to `ListadoClientesConSusPedidosPendientes'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Parcial_laboratorio1.c:113: undefined reference to `ListaDePedidosEnEstadoPendiente'
-collect2.exe: error: ld returned 1 exit status
-17:01:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ListadoDeClientesContandoSusPedidosPendientes':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:14: undefined reference to `ListaDeClientesConSusPedidosPendientes'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `MostrarListaDeClientesConSusPedidosPendientes':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:76: undefined reference to `ClienteConSusPedidosPendientes'
-collect2.exe: error: ld returned 1 exit status
-17:02:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:13:35 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:15:23 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:17:23 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:20:32 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:21:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:21:57 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:23:25 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:24:22 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:25:47 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:26:19 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:27:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:27:34 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:28:03 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:28:47 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:30:58 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:31:52 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:32:45 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:37:49 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:38:49 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:39:27 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:40:29 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:41:26 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:42:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-17:43:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:10:45 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:12:32 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:14:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:15:51 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:17:06 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:31:28 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:32:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-19:38:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-22:44:41 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
-..\src\Informes.c:10:6: warning: implicit declaration of function 'InicializarAuxiliarContadorDePedidosPorCliente' [-Wimplicit-function-declaration]
-   10 |   if(InicializarAuxiliarContadorDePedidosPorCliente(clientes, tam_clientes, pedidosPendientes) == 0)
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:212:7: warning: implicit declaration of function 'BuscarEnListaDeClientesLaLocalidad' [-Wimplicit-function-declaration]
-  212 |       BuscarEnListaDeClientesLaLocalidad(pedidos[i], clientes, tam_clientes, localidadIngresada);
-      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c:198:6: warning: unused variable 'contador' [-Wunused-variable]
-  198 |  int contador=0;
-      |      ^~~~~~~~
-..\src\Informes.c:197:6: warning: unused variable 'j' [-Wunused-variable]
-  197 |  int j;
+..\src\Informes.c:81:6: warning: unused variable 'j' [-Wunused-variable]
+   81 |  int j;
       |      ^
-..\src\Informes.c: In function 'MostrarKilosTotalesPorClienteMasPromedio':
-..\src\Informes.c:306:26: warning: format '%d' expects a matching 'int' argument [-Wformat=]
-  306 |      printf("\nCliente: %d --> reciclo %.2f kilos de polipropileno");
-      |                         ~^
-      |                          |
-      |                          int
-..\src\Informes.c:306:43: warning: format '%f' expects a matching 'double' argument [-Wformat=]
-  306 |      printf("\nCliente: %d --> reciclo %.2f kilos de polipropileno");
-      |                                        ~~~^
-      |                                           |
-      |                                           double
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `ListadoDeClientesContandoSusPedidosPendientes':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:10: undefined reference to `InicializarAuxiliarContadorDePedidosPorCliente'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `CantidadPedidosPendientesPorLocalidad':
-C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:212: undefined reference to `BuscarEnListaDeClientesLaLocalidad'
-collect2.exe: error: ld returned 1 exit status
-22:48:22 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:12:59 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'MostrarKilosTotalesPorClienteMasPromedio':
-..\src\Informes.c:295:6: warning: unused variable 'j' [-Wunused-variable]
-  295 |  int j;
-      |      ^
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-22:49:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
-22:59:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:01:02 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:12:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ContadorDePedidosPendientePorCliente':
-..\src\Informes.c:39:28: error: 'eAuxiliarContador' {aka 'struct <anonymous>'} has no member named 'estado'
-   39 |     if(pedidosPendientes[j].estado == OCUPADO && pedidosPendientes[j].id == pedidos[i].idCliente && pedidos[i].estado == PENDIENTE && pedidos[i].isEmpty == OCUPADO)
-      |                            ^
-23:12:47 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+22:14:31 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:25:10 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:15:43 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:27:17 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+..\src\Informes.c: In function 'BuscarLocalidadDelCliente':
+..\src\Informes.c:105:5: error: void value not ignored as it ought to be
+  105 |     MostrarClienteConSusPedidosPendientes(cliente, tam_pendientes, pedidosPendiente, localidades[j]))
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+22:16:58 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:30:51 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:17:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:213:27: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
-  213 |     printf("\nLocalidad: %s tienen %d pedidos pendientes\n");
-      |                          ~^
-      |                           |
-      |                           char *
-..\src\Informes.c:213:37: warning: format '%d' expects a matching 'int' argument [-Wformat=]
-  213 |     printf("\nLocalidad: %s tienen %d pedidos pendientes\n");
-      |                                    ~^
-      |                                     |
-      |                                     int
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:34:23 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:20:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:35:57 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:30:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:41:24 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+22:35:04 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:211:75: error: incompatible type for argument 1 of 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente'
-  211 |       cantidad = ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(pedidos, clientes, tam_pedidos, localidadIngresada)
-      |                                                                           ^~~~~~~
-      |                                                                           |
-      |                                                                           ePedidos * {aka struct <anonymous> *}
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:38:71: note: expected 'ePedidos' {aka 'struct <anonymous>'} but argument is of type 'ePedidos *' {aka 'struct <anonymous> *'}
-   38 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos, eClientes clientes[], int tam_clientes, char localidadIngresada[]);
-      |                                                              ~~~~~~~~~^~~~~~~
-..\src\Informes.c:211:126: error: expected ';' before '}' token
-  211 |       cantidad = ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(pedidos, clientes, tam_pedidos, localidadIngresada)
-      |                                                                                                                              ^
-      |                                                                                                                              ;
-  212 |      }
-      |      ~                                                                                                                        
-..\src\Informes.c: At top level:
-..\src\Informes.c:226:5: error: conflicting types for 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente'
-  226 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos[], eClientes clientes, int tam_pedidos, char localidadIngresada[])
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:38:5: note: previous declaration of 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente' was here
-   38 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos, eClientes clientes[], int tam_clientes, char localidadIngresada[]);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c: In function 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente':
-..\src\Informes.c:230:14: error: invalid operands to binary != (have 'eClientes' {aka 'struct <anonymous>'} and 'void *')
-  230 |  if(clientes != NULL && tam_pedidos)
-      |              ^~
-23:42:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:211:75: error: incompatible type for argument 1 of 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente'
-  211 |       cantidad = ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(pedidos, clientes, tam_pedidos, localidadIngresada);
-      |                                                                           ^~~~~~~
-      |                                                                           |
-      |                                                                           ePedidos * {aka struct <anonymous> *}
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:38:71: note: expected 'ePedidos' {aka 'struct <anonymous>'} but argument is of type 'ePedidos *' {aka 'struct <anonymous> *'}
-   38 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos, eClientes clientes[], int tam_clientes, char localidadIngresada[]);
-      |                                                              ~~~~~~~~~^~~~~~~
-..\src\Informes.c: At top level:
-..\src\Informes.c:226:5: error: conflicting types for 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente'
-  226 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos[], eClientes clientes, int tam_pedidos, char localidadIngresada[])
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:38:5: note: previous declaration of 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente' was here
-   38 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos, eClientes clientes[], int tam_clientes, char localidadIngresada[]);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-23:42:46 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:211:84: error: incompatible type for argument 2 of 'ContarEnListaDeClientesLasLocalidadesConPedidosPendiente'
-  211 |       cantidad = ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(pedidos, clientes, tam_pedidos, localidadIngresada);
-      |                                                                                    ^~~~~~~~
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:46:08 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'ObtenerClienteConMasPedidosPendientes':
+..\src\Informes.c:352:84: warning: passing argument 4 of 'BuscarClienteConMasPedidosPendientes' makes pointer from integer without a cast [-Wint-conversion]
+  352 |    BuscarClienteConMasPedidosPendientes(pedidosPendientes, tam_clientes, clientes, cantidadPedidosPendientes, localidades, tam_localidades);
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
       |                                                                                    |
-      |                                                                                    eClientes * {aka struct <anonymous> *}
+      |                                                                                    int
 In file included from ..\src\Informes.c:2:
-..\src\Informes.h:38:92: note: expected 'eClientes' {aka 'struct <anonymous>'} but argument is of type 'eClientes *' {aka 'struct <anonymous> *'}
-   38 | int ContarEnListaDeClientesLasLocalidadesConPedidosPendiente(ePedidos pedidos[], eClientes clientes, int tam_pedidos, char localidadIngresada[]);
-      |                                                                                  ~~~~~~~~~~^~~~~~~~
-23:43:15 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:48:52 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:220:5: warning: 'cantidad' may be used uninitialized in this function [-Wmaybe-uninitialized]
-  220 |     printf("\nLa Localidad: %s tiene %d pedidos pendientes\n", localidadIngresada, cantidad);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:49:18 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:198:6: warning: unused variable 'cantidad' [-Wunused-variable]
-  198 |  int cantidad;
-      |      ^~~~~~~~
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-23:49:34 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-00:18:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-00:21:14 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:00:55 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:05:27 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:22:38 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:45:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:49:32 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-01:53:31 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-02:19:31 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-06:00:32 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\utn.o" "..\\src\\utn.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'PromedioRecicladoDePolipropilenoPorCliente':
-..\src\Informes.c:280:47: warning: passing argument 1 of 'MostrarKilosTotalesPorClienteMasPromedio' from incompatible pointer type [-Wincompatible-pointer-types]
-  280 |      MostrarKilosTotalesPorClienteMasPromedio(clientes, tam_clientes, acumulador);
-      |                                               ^~~~~~~~
-      |                                               |
-      |                                               eClientes * {aka struct <anonymous> *}
+..\src\Informes.h:131:130: note: expected 'eLocalidad *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+  131 | int BuscarClienteConMasPedidosPendientes(eAuxiliarContador pedidoPendiente[], int tam_clientes, eClientes clientes[], eLocalidad localidades[], int tam_localidades, int cantidad);
+      |                                                                                                                       ~~~~~~~~~~~^~~~~~~~~~~~~
+..\src\Informes.c:352:111: warning: passing argument 5 of 'BuscarClienteConMasPedidosPendientes' makes integer from pointer without a cast [-Wint-conversion]
+  352 |    BuscarClienteConMasPedidosPendientes(pedidosPendientes, tam_clientes, clientes, cantidadPedidosPendientes, localidades, tam_localidades);
+      |                                                                                                               ^~~~~~~~~~~
+      |                                                                                                               |
+      |                                                                                                               eLocalidad * {aka struct <anonymous> *}
 In file included from ..\src\Informes.c:2:
-..\src\Informes.h:118:65: note: expected 'eAuxiliarContador *' {aka 'struct <anonymous> *'} but argument is of type 'eClientes *' {aka 'struct <anonymous> *'}
-  118 | void MostrarKilosTotalesPorClienteMasPromedio(eAuxiliarContador auxiliar[], int tam_clientes, eClientes clientes[]);
-      |                                               ~~~~~~~~~~~~~~~~~~^~~~~~~~~~
-..\src\Informes.c:280:71: warning: passing argument 3 of 'MostrarKilosTotalesPorClienteMasPromedio' from incompatible pointer type [-Wincompatible-pointer-types]
-  280 |      MostrarKilosTotalesPorClienteMasPromedio(clientes, tam_clientes, acumulador);
-      |                                                                       ^~~~~~~~~~
-      |                                                                       |
-      |                                                                       eAuxiliarContador * {aka struct <anonymous> *}
+..\src\Informes.h:131:149: note: expected 'int' but argument is of type 'eLocalidad *' {aka 'struct <anonymous> *'}
+  131 | int BuscarClienteConMasPedidosPendientes(eAuxiliarContador pedidoPendiente[], int tam_clientes, eClientes clientes[], eLocalidad localidades[], int tam_localidades, int cantidad);
+      |                                                                                                                                                 ~~~~^~~~~~~~~~~~~~~
+..\src\Informes.c: In function 'BuscarClienteConMasPedidosPendientes':
+..\src\Informes.c:369:5: error: too few arguments to function 'MostrarClienteConMasPedidosPendientes'
+  369 |     MostrarClienteConMasPedidosPendientes(clientes[i], pedidoPendiente, tam_clientes, localidades, tam_localidades);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from ..\src\Informes.c:2:
-..\src\Informes.h:118:105: note: expected 'eClientes *' {aka 'struct <anonymous> *'} but argument is of type 'eAuxiliarContador *' {aka 'struct <anonymous> *'}
-  118 | void MostrarKilosTotalesPorClienteMasPromedio(eAuxiliarContador auxiliar[], int tam_clientes, eClientes clientes[]);
-      |                                                                                               ~~~~~~~~~~^~~~~~~~~~
-..\src\Informes.c: In function 'MostrarKilosTotalesPorClienteMasPromedio':
-..\src\Informes.c:294:6: warning: unused variable 'j' [-Wunused-variable]
-  294 |  int j;
-      |      ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-06:02:01 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+..\src\Informes.h:133:5: note: declared here
+  133 | int MostrarClienteConMasPedidosPendientes(eClientes cliente, eAuxiliarContador pedidoPendiente[], int tam_pendientes, eLocalidad localidades[], int tam_localidades, int cantidad);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23:46:30 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-06:12:40 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-06:37:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-..\src\Pedidos.c: In function 'AltaPedidoDeRecoleccion':
-..\src\Pedidos.c:66:35: warning: passing argument 1 of 'MostrarListaDePedidosPendientes' from incompatible pointer type [-Wincompatible-pointer-types]
-   66 |   MostrarListaDePedidosPendientes(clientes, tam_clientes);
-      |                                   ^~~~~~~~
-      |                                   |
-      |                                   eClientes * {aka struct <anonymous> *}
-In file included from ..\src\Pedidos.c:2:
-..\src\Pedidos.h:105:46: note: expected 'ePedidos *' {aka 'struct <anonymous> *'} but argument is of type 'eClientes *' {aka 'struct <anonymous> *'}
-  105 | int MostrarListaDePedidosPendientes(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
-      |                                     ~~~~~~~~~^~~~~~~~~
-..\src\Pedidos.c:66:3: error: too few arguments to function 'MostrarListaDePedidosPendientes'
-   66 |   MostrarListaDePedidosPendientes(clientes, tam_clientes);
-      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Pedidos.c:2:
-..\src\Pedidos.h:105:5: note: declared here
-  105 | int MostrarListaDePedidosPendientes(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-06:40:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-06:44:15 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-06:48:16 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-06:50:37 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-07:55:50 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-08:00:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-08:11:04 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-08:12:02 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-08:19:44 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\utn.o" 
-09:31:31 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
+..\src\Informes.c: In function 'ObtenerClienteConMasPedidosPendientes':
+..\src\Informes.c:352:84: warning: passing argument 4 of 'BuscarClienteConMasPedidosPendientes' makes pointer from integer without a cast [-Wint-conversion]
+  352 |    BuscarClienteConMasPedidosPendientes(pedidosPendientes, tam_clientes, clientes, cantidadPedidosPendientes, localidades, tam_localidades);
+      |                                                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                                                    |
+      |                                                                                    int
+In file included from ..\src\Informes.c:2:
+..\src\Informes.h:131:130: note: expected 'eLocalidad *' {aka 'struct <anonymous> *'} but argument is of type 'int'
+  131 | int BuscarClienteConMasPedidosPendientes(eAuxiliarContador pedidoPendiente[], int tam_clientes, eClientes clientes[], eLocalidad localidades[], int tam_localidades, int cantidad);
+      |                                                                                                                       ~~~~~~~~~~~^~~~~~~~~~~~~
+..\src\Informes.c:352:111: warning: passing argument 5 of 'BuscarClienteConMasPedidosPendientes' makes integer from pointer without a cast [-Wint-conversion]
+  352 |    BuscarClienteConMasPedidosPendientes(pedidosPendientes, tam_clientes, clientes, cantidadPedidosPendientes, localidades, tam_localidades);
+      |                                                                                                               ^~~~~~~~~~~
+      |                                                                                                               |
+      |                                                                                                               eLocalidad * {aka struct <anonymous> *}
+In file included from ..\src\Informes.c:2:
+..\src\Informes.h:131:149: note: expected 'int' but argument is of type 'eLocalidad *' {aka 'struct <anonymous> *'}
+  131 | int BuscarClienteConMasPedidosPendientes(eAuxiliarContador pedidoPendiente[], int tam_clientes, eClientes clientes[], eLocalidad localidades[], int tam_localidades, int cantidad);
+      |                                                                                                                                                 ~~~~^~~~~~~~~~~~~~~
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 ..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:35:13: warning: unused variable 'localidades' [-Wunused-variable]
-   35 |  eLocalidad localidades[CANT_LOCALIDADES] = {{1, "Villa Soldati",OCUPADO},
-      |             ^~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
-..\src\localidad.c: In function 'MostrarListaDeLocalidades':
-..\src\localidad.c:34:5: warning: implicit declaration of function 'MostrarInfoUnCliente' [-Wimplicit-function-declaration]
-   34 |     MostrarInfoUnCliente(localidades[i]);
-      |     ^~~~~~~~~~~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'MostrarClienteConSusPedidosPendientes':
-..\src\Informes.c:99:66: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-   99 |       cliente.direccion.calle, cliente.direccion.numero, cliente.localidad, pedidosPendientes[i].contador);
-      |                                                                  ^~~~~~~~~
-      |                                                                  idLocalidad
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:213:63: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  213 |         pedidos[j].estado == PENDIENTE && stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                                                               ^~~~~~~~~
-      |                                                               idLocalidad
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:256:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  256 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-09:45:08 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-In file included from ..\src\Clientes.c:2:
-..\src\Clientes.h:56:97: error: unknown type name 'tam_localidades'
-   56 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],tam_localidades);
-      |                                                                                                 ^~~~~~~~~~~~~~~
-..\src\Clientes.c: In function 'InformacionDeUnCliente':
-..\src\Clientes.c:93:3: error: too few arguments to function 'ObtenerEntero'
-   93 |   ObtenerEntero(&unCliente.idLocalidad, "\nIngrese el id de una localidad que figura en la lista: ",
-      |   ^~~~~~~~~~~~~
-In file included from ..\src\localidad.h:12,
-                 from ..\src\Clientes.h:5,
-                 from ..\src\Clientes.c:2:
-..\src\utn.h:24:5: note: declared here
-   24 | int ObtenerEntero( int* pResultado,char mensaje[],char mensajeError[],int minimo,int maximo,int reintentos);
-      |     ^~~~~~~~~~~~~
-..\src\Clientes.c: At top level:
-..\src\Clientes.c:100:97: error: unknown type name 'tam_localidades'
-  100 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],tam_localidades)
-      |                                                                                                 ^~~~~~~~~~~~~~~
-..\src\Clientes.c: In function 'ModificacionDatosDeUnCliente':
-..\src\Clientes.c:164:3: error: too few arguments to function 'MostrarListaClientes'
-  164 |   MostrarListaClientes(clientes, cantidad);
-      |   ^~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:134:5: note: declared here
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad,  eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:176:9: error: too few arguments to function 'ElegirOpcionDeModificacion'
-  176 |      if(ElegirOpcionDeModificacion(clientes, opcion, index)==1)
-      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Clientes.c:2:
-..\src\Clientes.h:83:5: note: declared here
-   83 | int ElegirOpcionDeModificacion(eClientes clientes[], int opcion, int index, eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c: In function 'ElegirOpcionDeModificacion':
-..\src\Clientes.c:214:8: error: too few arguments to function 'ObtenerEntero'
-  214 |     if(ObtenerEntero(&clientes[index].idLocalidad, "\nIngrese el id de una localidad que figura en la lista: ",
-      |        ^~~~~~~~~~~~~
-In file included from ..\src\localidad.h:12,
-                 from ..\src\Clientes.h:5,
-                 from ..\src\Clientes.c:2:
-..\src\utn.h:24:5: note: declared here
-   24 | int ObtenerEntero( int* pResultado,char mensaje[],char mensajeError[],int minimo,int maximo,int reintentos);
-      |     ^~~~~~~~~~~~~
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:5: error: too few arguments to function 'MostrarListaClientes'
-  259 |     MostrarListaClientes(clientes, cantidad);
-      |     ^~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:134:5: note: declared here
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad,  eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~
-09:50:02 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-In file included from ..\src\Clientes.c:2:
-..\src\Clientes.h:56:97: error: unknown type name 'tam_localidades'
-   56 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],tam_localidades);
-      |                                                                                                 ^~~~~~~~~~~~~~~
-..\src\Clientes.c: In function 'ModificacionDatosDeUnCliente':
-..\src\Clientes.c:5:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-    5 | {
-      | ^
-..\src\Clientes.c:19:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   19 | {
-      | ^
-..\src\Clientes.c:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   35 | {
-      | ^
-..\src\Clientes.c:79:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   79 | {
-      | ^
-..\src\Clientes.c:100:97: error: unknown type name 'tam_localidades'
-  100 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],tam_localidades)
-      |                                                                                                 ^~~~~~~~~~~~~~~
-..\src\Clientes.c:120:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  120 | {
-      | ^
-..\src\Clientes.c:135:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  135 | {
-      | ^
-..\src\Clientes.c:153:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  153 | {
-      | ^
-..\src\Clientes.c:194:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  194 | {
-      | ^
-..\src\Clientes.c:230:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  230 | {
-      | ^
-..\src\Clientes.c:248:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  248 | {
-      | ^
-In file included from ..\src\Clientes.c:2:
-..\src\Clientes.h:75:5: error: old-style parameter declarations in prototyped function definition
-   75 | int ModificacionDatosDeUnCliente(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:286: error: expected '{' at end of input
-..\src\Clientes.c:281:1: warning: control reaches end of non-void function [-Wreturn-type]
-  281 | }
-      | ^
-09:51:34 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-In file included from ..\src\Pedidos.h:5,
-                 from ..\src\Pedidos.c:2:
-..\src\Clientes.h:56:97: error: unknown type name 'tam_localidades'
-   56 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],tam_localidades);
-      |                                                                                                 ^~~~~~~~~~~~~~~
-In file included from ..\src\Pedidos.c:2:
-..\src\Pedidos.h: In function 'ModificacionDatosDeUnCliente':
-..\src\Pedidos.h:15:2: error: storage class specified for parameter 'eTiposResiduos'
-   15 | }eTiposResiduos;
-      |  ^~~~~~~~~~~~~~
-..\src\Pedidos.h:21:2: error: expected specifier-qualifier-list before 'eTiposResiduos'
-   21 |  eTiposResiduos tiposResiduos;
-      |  ^~~~~~~~~~~~~~
-..\src\Pedidos.h:25:2: error: storage class specified for parameter 'ePedidos'
-   25 | }ePedidos;
-      |  ^~~~~~~~
-..\src\Pedidos.h:32:31: error: expected declaration specifiers or '...' before 'ePedidos'
-   32 | int InicializarListaDePedidos(ePedidos pedidos[], int cantidad);
-      |                               ^~~~~~~~
-..\src\Pedidos.h:39:29: error: expected declaration specifiers or '...' before 'ePedidos'
-   39 | int BuscarLugarLibrePedidos(ePedidos pedidos[], int cantidad);
-      |                             ^~~~~~~~
-..\src\Pedidos.h:47:24: error: expected declaration specifiers or '...' before 'ePedidos'
-   47 | int BuscarPedidosPorId(ePedidos pedidos[], int cantidad, int id);
-      |                        ^~~~~~~~
-..\src\Pedidos.h:57:69: error: expected declaration specifiers or '...' before 'ePedidos'
-   57 | int AltaPedidoDeRecoleccion(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, int* idPedidos);
-      |                                                                     ^~~~~~~~
-In file included from ..\src\Pedidos.c:2:
-..\src\Pedidos.h:65:25: error: expected declaration specifiers or '...' before 'ePedidos'
-   65 | int MostrarInfoUnPedido(ePedidos pedidos, eClientes clientes[], int tam_clientes);
-      |                         ^~~~~~~~
-..\src\Pedidos.h:74:27: error: expected declaration specifiers or '...' before 'ePedidos'
-   74 | int MostrarListaDePedidos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
-      |                           ^~~~~~~~
-..\src\Pedidos.h:83:22: error: expected declaration specifiers or '...' before 'ePedidos'
-   83 | int ProcesarResiduos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
-      |                      ^~~~~~~~
-..\src\Pedidos.h:90:39: error: expected declaration specifiers or '...' before 'ePedidos'
-   90 | int VerificarIngresoDeTiposDeResiduos(ePedidos pedidos[], int index);
-      |                                       ^~~~~~~~
-..\src\Pedidos.h:96:47: error: expected declaration specifiers or '...' before 'ePedidos'
-   96 | void PedirIngresoDeTiposDeResiduosReciclados (ePedidos pedidos[], int index);
-      |                                               ^~~~~~~~
-..\src\Pedidos.h:105:37: error: expected declaration specifiers or '...' before 'ePedidos'
-  105 | int MostrarListaDePedidosPendientes(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes);
-      |                                     ^~~~~~~~
-..\src\Pedidos.c:4:31: error: expected declaration specifiers or '...' before 'ePedidos'
-    4 | int InicializarListaDePedidos(ePedidos pedidos[], int cantidad)
-      |                               ^~~~~~~~
-..\src\Pedidos.c:21:29: error: expected declaration specifiers or '...' before 'ePedidos'
-   21 | int BuscarLugarLibrePedidos(ePedidos pedidos[], int cantidad)
-      |                             ^~~~~~~~
-..\src\Pedidos.c:40:24: error: expected declaration specifiers or '...' before 'ePedidos'
-   40 | int BuscarPedidosPorId(ePedidos pedidos[], int cantidad, int id)
-      |                        ^~~~~~~~
-..\src\Pedidos.c:58:69: error: expected declaration specifiers or '...' before 'ePedidos'
-   58 | int AltaPedidoDeRecoleccion(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, int* idPedidos)
-      |                                                                     ^~~~~~~~
-..\src\Pedidos.c:99:25: error: expected declaration specifiers or '...' before 'ePedidos'
-   99 | int MostrarInfoUnPedido(ePedidos pedidos, eClientes clientes[], int tam_clientes)
-      |                         ^~~~~~~~
-..\src\Pedidos.c:118:27: error: expected declaration specifiers or '...' before 'ePedidos'
-  118 | int MostrarListaDePedidos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes)
-      |                           ^~~~~~~~
-..\src\Pedidos.c:136:22: error: expected declaration specifiers or '...' before 'ePedidos'
-  136 | int ProcesarResiduos(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes)
-      |                      ^~~~~~~~
-..\src\Pedidos.c:180:47: error: expected declaration specifiers or '...' before 'ePedidos'
-  180 | void PedirIngresoDeTiposDeResiduosReciclados (ePedidos pedidos[], int index) // mas generico?
-      |                                               ^~~~~~~~
-..\src\Pedidos.c:193:39: error: expected declaration specifiers or '...' before 'ePedidos'
-  193 | int VerificarIngresoDeTiposDeResiduos(ePedidos pedidos[], int index)
-      |                                       ^~~~~~~~
-..\src\Pedidos.c:212:37: error: expected declaration specifiers or '...' before 'ePedidos'
-  212 | int MostrarListaDePedidosPendientes(ePedidos pedidos[], int tam_pedidos, eClientes clientes[], int tam_clientes)
-      |                                     ^~~~~~~~
-In file included from ..\src\Pedidos.h:5,
-                 from ..\src\Pedidos.c:2:
-..\src\Clientes.h:75:5: error: old-style parameter declarations in prototyped function definition
-   75 | int ModificacionDatosDeUnCliente(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Pedidos.c:234: error: expected '{' at end of input
-..\src\Pedidos.c:228:1: warning: control reaches end of non-void function [-Wreturn-type]
-  228 | }
-      | ^
-09:52:58 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:84:8: error: too few arguments to function 'AltaDeCliente'
-   84 |     if(AltaDeCliente(clientes, CANT_CLIENTES,&idClientes) == -1)
-      |        ^~~~~~~~~~~~~
-In file included from ..\src\Informes.h:4,
-                 from ..\src\Parcial_laboratorio1.c:11:
-..\src\Clientes.h:56:5: note: declared here
-   56 | int AltaDeCliente(eClientes clientes[], int cantidad, int* idClientes, eLocalidad localidades[],int tam_localidades);
-      |     ^~~~~~~~~~~~~
-..\src\Parcial_laboratorio1.c:91:8: error: too few arguments to function 'ModificacionDatosDeUnCliente'
-   91 |     if(ModificacionDatosDeUnCliente(clientes, CANT_CLIENTES)==-1)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.h:4,
-                 from ..\src\Parcial_laboratorio1.c:11:
-..\src\Clientes.h:75:5: note: declared here
-   75 | int ModificacionDatosDeUnCliente(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Parcial_laboratorio1.c:35:13: warning: unused variable 'localidades' [-Wunused-variable]
-   35 |  eLocalidad localidades[CANT_LOCALIDADES] = {{1, "Villa Soldati",OCUPADO},
-      |             ^~~~~~~~~~~
-09:55:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:5: error: too few arguments to function 'MostrarListaClientes'
-  259 |     MostrarListaClientes(clientes, cantidad);
-      |     ^~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:134:5: note: declared here
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad,  eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~
-09:56:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'MostrarClienteConSusPedidosPendientes':
-..\src\Informes.c:99:66: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-   99 |       cliente.direccion.calle, cliente.direccion.numero, cliente.localidad, pedidosPendientes[i].contador);
-      |                                                                  ^~~~~~~~~
-      |                                                                  idLocalidad
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:213:63: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  213 |         pedidos[j].estado == PENDIENTE && stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                                                               ^~~~~~~~~
-      |                                                               idLocalidad
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:256:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  256 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:12:21 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-..\src\Pedidos.c: In function 'AltaPedidoDeRecoleccion':
-..\src\Pedidos.c:66:3: error: too few arguments to function 'MostrarListaClientes'
-   66 |   MostrarListaClientes(clientes, tam_clientes);
-      |   ^~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Pedidos.h:5,
-                 from ..\src\Pedidos.c:2:
-..\src\Clientes.h:68:5: note: declared here
-   68 | int MostrarListaClientes(eClientes clientes[], int cantidad,  eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~
-10:13:30 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:5: error: too few arguments to function 'MostrarListaClientes'
-  259 |     MostrarListaClientes(clientes, cantidad);
-      |     ^~~~~~~~~~~~~~~~~~~~
-..\src\Clientes.c:134:5: note: declared here
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~~~~~~~~
-10:14:38 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-..\src\Pedidos.c: In function 'AltaPedidoDeRecoleccion':
-..\src\Pedidos.c:66:3: error: too few arguments to function 'MostrarListaClientes'
-   66 |   MostrarListaClientes(clientes, tam_clientes);
-      |   ^~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Pedidos.h:5,
-                 from ..\src\Pedidos.c:2:
-..\src\Clientes.h:68:5: note: declared here
-   68 | int MostrarListaClientes(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~
-10:15:19 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
-..\src\Informes.c:15:5: error: too few arguments to function 'MostrarListaDeClientesConSusPedidosPendientes'
-   15 |     MostrarListaDeClientesConSusPedidosPendientes(clientes, tam_clientes, pedidosPendientes);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:49:5: note: declared here
-   49 | int MostrarListaDeClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendiente[], eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c: In function 'MostrarClienteConSusPedidosPendientes':
-..\src\Informes.c:99:6: warning: unused variable 'j' [-Wunused-variable]
-   99 |  int j;
-      |      ^
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:221:63: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  221 |         pedidos[j].estado == PENDIENTE && stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                                                               ^~~~~~~~~
-      |                                                               idLocalidad
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:264:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  264 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:16:20 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
-..\src\Informes.c:15:5: error: too few arguments to function 'MostrarListaDeClientesConSusPedidosPendientes'
-   15 |     MostrarListaDeClientesConSusPedidosPendientes(clientes, tam_clientes, pedidosPendientes);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:49:5: note: declared here
-   49 | int MostrarListaDeClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendiente[], eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c: In function 'MostrarClienteConSusPedidosPendientes':
-..\src\Informes.c:99:6: warning: unused variable 'j' [-Wunused-variable]
-   99 |  int j;
-      |      ^
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:221:63: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  221 |         pedidos[j].estado == PENDIENTE && stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                                                               ^~~~~~~~~
-      |                                                               idLocalidad
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:264:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  264 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:26:15 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'ListadoDeClientesContandoSusPedidosPendientes':
-..\src\Informes.c:15:5: error: too few arguments to function 'MostrarListaDeClientesConSusPedidosPendientes'
-   15 |     MostrarListaDeClientesConSusPedidosPendientes(clientes, tam_clientes, pedidosPendientes);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.c:2:
-..\src\Informes.h:49:5: note: declared here
-   49 | int MostrarListaDeClientesConSusPedidosPendientes(eClientes clientes[], int tam_clientes, eAuxiliarContador pedidosPendiente[], eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Informes.c: In function 'MostrarClienteConSusPedidosPendientes':
-..\src\Informes.c:99:6: warning: unused variable 'j' [-Wunused-variable]
-   99 |  int j;
-      |      ^
-..\src\Informes.c: In function 'CantidadPedidosPendientesPorLocalidad':
-..\src\Informes.c:221:63: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  221 |         pedidos[j].estado == PENDIENTE && stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                                                               ^~~~~~~~~
-      |                                                               idLocalidad
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:264:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  264 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:36:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:105:8: error: too few arguments to function 'AltaPedidoDeRecoleccion'
-  105 |     if(AltaPedidoDeRecoleccion(clientes, CANT_CLIENTES, pedidos, CANT_PEDIDOS, &idPedidos)==-1)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Informes.h:5,
-                 from ..\src\Parcial_laboratorio1.c:11:
-..\src\Pedidos.h:57:5: note: declared here
-   57 | int AltaPedidoDeRecoleccion(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, int* idPedidos,  eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~
-..\src\Parcial_laboratorio1.c:119:8: error: too few arguments to function 'ListadoDeClientesContandoSusPedidosPendientes'
-  119 |     if(ListadoDeClientesContandoSusPedidosPendientes(clientes, CANT_CLIENTES, pedidos, CANT_PEDIDOS)==-1)
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Parcial_laboratorio1.c:156:5: error: too few arguments to function 'ObtenerClienteConMasPedidosPendientes'
+  156 |     ObtenerClienteConMasPedidosPendientes(clientes, CANT_CLIENTES, pedidos, CANT_PEDIDOS);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from ..\src\Parcial_laboratorio1.c:11:
-..\src\Informes.h:24:5: note: declared here
-   24 | int ListadoDeClientesContandoSusPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, eLocalidad localidades[], int tam_localidades);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-10:38:29 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+..\src\Informes.h:129:5: note: declared here
+  129 | int ObtenerClienteConMasPedidosPendientes(eClientes clientes[], int tam_clientes, ePedidos pedidos[], int tam_pedidos, eLocalidad localidades[], int tam_localidades);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+23:47:18 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:46: error: 'localidades' undeclared (first use in this function)
-  259 |     MostrarListaClientes(clientes, cantidad, localidades, tam_localidades);
-      |                                              ^~~~~~~~~~~
-..\src\Clientes.c:259:46: note: each undeclared identifier is reported only once for each function it appears in
-..\src\Clientes.c:259:59: error: 'tam_localidades' undeclared (first use in this function)
-  259 |     MostrarListaClientes(clientes, cantidad, localidades, tam_localidades);
-      |                                                           ^~~~~~~~~~~~~~~
-10:39:55 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:5:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-    5 | {
-      | ^
-..\src\Clientes.c:19:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   19 | {
-      | ^
-..\src\Clientes.c:35:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   35 | {
-      | ^
-..\src\Clientes.c:79:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-   79 | {
-      | ^
-..\src\Clientes.c:101:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  101 | {
-      | ^
-..\src\Clientes.c:120:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  120 | {
-      | ^
-..\src\Clientes.c:135:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  135 | {
-      | ^
-..\src\Clientes.c:153:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  153 | {
-      | ^
-..\src\Clientes.c:194:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  194 | {
-      | ^
-..\src\Clientes.c:230:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  230 | {
-      | ^
-..\src\Clientes.c:248:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
-  248 | {
-      | ^
-..\src\Clientes.c:286: error: expected '{' at end of input
-..\src\Clientes.c:281:1: warning: control reaches end of non-void function [-Wreturn-type]
-  281 | }
-      | ^
-10:40:10 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:46: error: incompatible type for argument 3 of 'MostrarListaClientes'
-  259 |     MostrarListaClientes(clientes, cantidad, localidades, tam_localidades);
-      |                                              ^~~~~~~~~~~
-      |                                              |
-      |                                              eLocalidad {aka struct <anonymous>}
-..\src\Clientes.c:134:73: note: expected 'eLocalidad *' {aka 'struct <anonymous> *'} but argument is of type 'eLocalidad' {aka 'struct <anonymous>'}
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |                                                              ~~~~~~~~~~~^~~~~~~~~~~~~
-10:41:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+23:48:33 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:263:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  263 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:42:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+00:12:14 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'MostrarClienteConMasPedidosCompletados':
+..\src\Informes.c:404:4: warning: implicit declaration of function 'BuscarPedidosCompletosPorCliente'; did you mean 'BuscarPedidosCompletadosPorCliente'? [-Wimplicit-function-declaration]
+  404 |    BuscarPedidosCompletosPorCliente(pedidos, tam_pedidos, pedidosCompletos, tam_clientes) == 0)
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |    BuscarPedidosCompletadosPorCliente
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `MostrarClienteConMasPedidosCompletados':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:404: undefined reference to `BuscarPedidosCompletosPorCliente'
+collect2.exe: error: ld returned 1 exit status
+00:12:59 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+00:16:49 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+00:18:19 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+01:15:00 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c: In function 'BajaDeCliente':
-..\src\Clientes.c:259:46: error: incompatible type for argument 3 of 'MostrarListaClientes'
-  259 |     MostrarListaClientes(clientes, cantidad, localidades, tam_localidades);
-      |                                              ^~~~~~~~~~~
-      |                                              |
-      |                                              eLocalidad {aka struct <anonymous>}
-..\src\Clientes.c:134:73: note: expected 'eLocalidad *' {aka 'struct <anonymous> *'} but argument is of type 'eLocalidad' {aka 'struct <anonymous>'}
-  134 | int MostrarListaClientes(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |                                                              ~~~~~~~~~~~^~~~~~~~~~~~~
-10:43:09 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
-..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:98:8: error: too few arguments to function 'BajaDeCliente'
-   98 |     if(BajaDeCliente(clientes, CANT_CLIENTES)==-1)
-      |        ^~~~~~~~~~~~~
-In file included from ..\src\Informes.h:4,
-                 from ..\src\Parcial_laboratorio1.c:11:
-..\src\Clientes.h:98:5: note: declared here
-   98 | int BajaDeCliente(eClientes clientes[], int cantidad, eLocalidad localidades, int tam_localidades);
-      |     ^~~~~~~~~~~~~
-10:43:36 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
-..\src\Clientes.c:247:5: error: conflicting types for 'BajaDeCliente'
-  247 | int BajaDeCliente(eClientes clientes[], int cantidad, eLocalidad localidades[], int tam_localidades)
-      |     ^~~~~~~~~~~~~
-In file included from ..\src\Clientes.c:2:
-..\src\Clientes.h:98:5: note: previous declaration of 'BajaDeCliente' was here
-   98 | int BajaDeCliente(eClientes clientes[], int cantidad, eLocalidad localidades, int tam_localidades);
-      |     ^~~~~~~~~~~~~
-10:44:08 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-..\src\Informes.c: In function 'VerificarIngresoDeLocalidad':
-..\src\Informes.c:263:27: error: 'eClientes' {aka 'struct <anonymous>'} has no member named 'localidad'; did you mean 'idLocalidad'?
-  263 |    if(stricmp(clientes[i].localidad, localidadIngresada)==0)
-      |                           ^~~~~~~~~
-      |                           idLocalidad
-10:46:05 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-10:49:52 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-10:51:34 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+01:15:28 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:50:00 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'CantidadPedidosPendientesDeUnaLocalidad':
+..\src\Informes.c:251:12: warning: implicit declaration of function 'BuscarLocalidadesPorId'; did you mean 'BuscarLocalidadPorId'? [-Wimplicit-function-declaration]
+  251 |    index = BuscarLocalidadesPorId(localidades, tam_localidades, auxLocalidad);
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+      |            BuscarLocalidadPorId
+..\src\Informes.c:256:22: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  256 |     printf("\ntiene %d pedidos pendientes.\n");
+      |                     ~^
+      |                      |
+      |                      int
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 ..\src\Parcial_laboratorio1.c: In function 'main':
-..\src\Parcial_laboratorio1.c:41:6: warning: variable 'idLocalidades' set but not used [-Wunused-but-set-variable]
-   41 |  int idLocalidades;
-      |      ^~~~~~~~~~~~~
-gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
-10:53:42 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+..\src\Parcial_laboratorio1.c:142:8: warning: implicit declaration of function 'CantidadPedidosPendientesPorLocalidad'; did you mean 'CantidadPedidosPendientesDeUnaLocalidad'? [-Wimplicit-function-declaration]
+  142 |     if(CantidadPedidosPendientesPorLocalidad (pedidos, CANT_PEDIDOS,clientes, CANT_CLIENTES, localidades, CANT_LOCALIDADES)==-1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |        CantidadPedidosPendientesDeUnaLocalidad
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
 gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
-Info: Nothing to build for Parcial_laboratorio1
-10:54:51 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Informes.o: in function `CantidadPedidosPendientesDeUnaLocalidad':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Informes.c:251: undefined reference to `BuscarLocalidadesPorId'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Parcial_laboratorio1.o: in function `main':
+C:\Users\Elii\Desktop\Parcial_Laboratorio\Parcial_laboratorio1\Debug/../src/Parcial_laboratorio1.c:142: undefined reference to `CantidadPedidosPendientesPorLocalidad'
+collect2.exe: error: ld returned 1 exit status
+22:52:18 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
 gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
 Info: Nothing to build for Parcial_laboratorio1
-10:56:37 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+22:56:22 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
-..\src\localidad.c: In function 'MostrarListaDeLocalidades':
-..\src\localidad.c:34:5: warning: implicit declaration of function 'MostrarInfoUnCliente' [-Wimplicit-function-declaration]
-   34 |     MostrarInfoUnCliente(localidades[i]);
-      |     ^~~~~~~~~~~~~~~~~~~~
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+22:57:06 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:00:09 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:00:50 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:02:49 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:05:25 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:07:38 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:12:58 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+..\src\Informes.c: In function 'BuscarEnListaDeClientes':
+..\src\Informes.c:252:5: error: expected expression before ')' token
+  252 |  if()
+      |     ^
+..\src\Informes.c:254:16: error: 'j' undeclared (first use in this function)
+  254 |   for(int j=0; j<tam_clientes;j++)
+      |                ^
+..\src\Informes.c:254:16: note: each undeclared identifier is reported only once for each function it appears in
+23:13:53 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+Info: Nothing to build for Parcial_laboratorio1
+23:15:12 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:34:47 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:37:48 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+23:39:47 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+08:31:15 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clientes.o" "..\\src\\Clientes.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Parcial_laboratorio1.o" "..\\src\\Parcial_laboratorio1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\localidad.o" "..\\src\\localidad.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Pedidos.o" "..\\src\\Pedidos.c" 
+gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 
+08:36:07 **** Incremental Build of configuration Debug for project Parcial_laboratorio1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Informes.o" "..\\src\\Informes.c" 
 gcc -o Parcial_laboratorio1.exe "src\\Clientes.o" "src\\Informes.o" "src\\Parcial_laboratorio1.o" "src\\Pedidos.o" "src\\localidad.o" "src\\utn.o" 

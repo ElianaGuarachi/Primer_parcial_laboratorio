@@ -1,8 +1,0 @@
-
-#ifndef INFORMES_H_
-#define INFORMES_H_
-#include "Clientes.h"
-#include "Pedidos.h"
-
-
-#endif /* INFORMES_H_ */
